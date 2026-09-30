@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Shopping List</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ 
+  <div class="container">
+    <h2>🛒 Shopping list</h2>
+    <!-- form wraps input + button, so Enter key submits -->
+    <form>
+      <label for="item-input">Add item</label>
+      <input
+        type="text"
+        id="item-input"
+        placeholder="e.g. Milk, bread, apples"
+        autocomplete="off"
+        required
+      />
+      <button type="submit" id="add-button">Add</button>
+    </form>
+    <ul id="shopping-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
